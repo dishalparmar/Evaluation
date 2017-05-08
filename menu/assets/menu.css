@@ -1,0 +1,12 @@
+body{
+		font-family:Verdana, "sans-serif", Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS";
+		font-size: 11px;
+	}
+
+ul {
+		line-height:25px;
+}
+
+a {
+	color: #73B9FF;
+}

@@ -1,0 +1,205 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>JSON Menu</title>
+<style>
+
+</style>
+<link rel="stylesheet" type="text/css" href="assets/menu.css">      
+<script src="assets/jquery-3.1.1.min.js"></script>
+
+<script>
+$(document).ready(function(){
+	
+var data = {
+     menu:[
+      {
+         "id":"contact",
+         "leaf":true,
+         "description":"Contact Us",
+         "link":"",
+         "content":"contactUs.html",
+         "cssClass":"static-content",
+         "menu":null
+      },
+      {
+         "id":"rules",
+         "leaf":false,
+         "description":"Sports Betting Rules",
+         "link":"",
+         "content":"",
+         "cssClass":"",
+         "menu":[
+            {
+               "id":"types",
+               "leaf":true,
+               "description":"Wager Types",
+               "link":"",
+               "content":"wagerTypes.html",
+               "cssClass":"static-content wager-types",
+               "menu":null
+            },
+            {
+               "id":"odds",
+               "leaf":true,
+               "description":"Odds & Lines",
+               "link":"",
+               "content":"oddsAndLines.html",
+               "cssClass":"static-content",
+               "menu":null
+            },
+            {
+               "id":"policies",
+               "leaf":true,
+               "description":"Rules & Policies",
+               "link":"",
+               "content":"rulesAndPolicies.html",
+               "cssClass":"static-content rules-policies",
+               "menu":null
+            },
+            {
+               "id":"bonuses",
+               "leaf":true,
+               "description":"Sports Bonuses",
+               "link":"",
+               "content":"sportsBonuses.html",
+               "cssClass":"static-content",
+               "menu":null
+            }
+         ]
+      },
+      {
+         "id":"conditions",
+         "leaf":false,
+         "description":"Terms & Conditions",
+         "link":"",
+         "content":"",
+         "cssClass":"",
+         "menu":[
+            {
+               "id":"termsOfService",
+               "leaf":true,
+               "description":"Terms of Service",
+               "link":"",
+               "content":"termsOfService.html",
+               "cssClass":"static-content",
+               "menu":null
+            },
+            {
+               "id":"privacy",
+               "leaf":true,
+               "description":"Privacy Policy",
+               "link":"",
+               "content":"privacy.html",
+               "cssClass":"static-content",
+               "menu":null
+            }
+         ]
+      },
+      {
+         "id":"view",
+         "leaf":true,
+         "description":"View in: Mobile | Full Site",
+         "link":"",
+         "content":"view.html",
+         "cssClass":"static-content",
+         "menu":null
+      }
+   ]
+ };
+
+
+
+	
+var getMenuItem = function (itemData) {
+	
+var myLeaf = itemData.leaf;
+	
+  $(function() {
+    $("#"+itemData.id).click(function(e) {
+		e.preventDefault();
+		alert(itemData.content);
+    });
+  });	
+	
+	
+	
+if(myLeaf === true){   
+	
+	var item = $("<li>").append(
+					
+		$("<a>", {
+	
+            href: '#' + itemData.link,
+           	html:  itemData.description,
+			id: itemData.id
+        }),
+	
+		$("<div>", {
+            
+            html: 'Id: ' + itemData.id
+        }),	
+		$("<div>", {
+            
+            html:'cssClass: ' + itemData.cssClass
+        })
+
+	)}
+	
+	else{
+		
+		var item = $("<li>").append(	
+		
+		$("<div>", {
+            
+           	html:  itemData.description			
+        }),
+
+			
+		$("<div>", {
+            
+            html: 'Id: ' + itemData.id
+        }),	
+		$("<div>", {
+            
+            html:'cssClass: ' + itemData.cssClass
+        })
+	)
+		
+}
+
+	if (itemData.menu) {
+            var subList = $("<ul>");
+            $.each(itemData.menu, function () {
+                subList.append(getMenuItem(this));
+            });
+            item.append(subList);
+        }
+	
+        return item;
+    };
+    
+    var $menu = $("#json-menu");
+    $.each(data.menu, function () {
+        $menu.append(
+            getMenuItem(this)
+        );
+    });
+	
+	
+    $menu.menu();
+	
+	
+});
+<!--document end-->
+</script>
+
+</head>
+
+<body>
+
+<ul id="json-menu"></ul>
+
+</body>
+</html>

@@ -1,0 +1,171 @@
+.container {
+  max-width: 760px;
+  background-color: #000;
+  /*Top links*/
+  /*Join now*/
+  /* Channel banner */
+  /* show-more */
+  /* links */
+  /* bottom links*/ }
+  .container .nav .m-menu {
+    display: none;
+    background-image: url("/app/assets/images/m-menu.png");
+    width: 44px;
+    height: 34px;
+    float: right;
+    top: 10px;
+    position: relative; }
+  .container .nav li a, .container .nav li a:hover {
+    padding: 0 0 10px 0;
+    background: none; }
+    .container .nav li a .tab-nav-img, .container .nav li a:hover .tab-nav-img {
+      width: 82px;
+      height: 56px;
+      margin-left: 1px;
+      cursor: pointer; }
+    .container .nav li a .tab-poker, .container .nav li a:hover .tab-poker {
+      background: url("/app/assets/images/sprite.png") -117px 525px; }
+    .container .nav li a .tab-poker:hover, .container .nav li a:hover .tab-poker:hover {
+      background: url("/app/assets/images/sprite.png") -117px -583px; }
+    .container .nav li a .tab-casino, .container .nav li a:hover .tab-casino {
+      background: url("/app/assets/images/sprite.png") -200px 525px; }
+    .container .nav li a .tab-casino:hover, .container .nav li a:hover .tab-casino:hover {
+      background: url("/app/assets/images/sprite.png") -200px -583px; }
+    .container .nav li a .tab-sports, .container .nav li a:hover .tab-sports {
+      background: url("/app/assets/images/sprite.png") -283px 525px; }
+    .container .nav li a .tab-sports:hover, .container .nav li a:hover .tab-sports:hover {
+      background: url("/app/assets/images/sprite.png") -283px -583px; }
+    .container .nav li a .tab-live, .container .nav li a:hover .tab-live {
+      background: url("/app/assets/images/sprite.png") -367px 525px; }
+    .container .nav li a .tab-live:hover, .container .nav li a:hover .tab-live:hover {
+      background: url("/app/assets/images/sprite.png") -367px -583px; }
+  .container .nav .navbar-brand {
+    padding: 20px 20px 0 0; }
+  .container .top-links {
+    color: #85A5B1;
+    font-size: 1.1rem;
+    margin: 0 -2px 0 5px; }
+  .container .top-link-border-top {
+    border-top: 1px solid #283238;
+    height: 23px; }
+  .container .toll-free {
+    color: #fff; }
+  .container .join-now {
+    background: url("/app/assets/images/sprite.png") -111px -372px;
+    width: 181px;
+    height: 55px;
+    cursor: pointer;
+    border: 4px solid #000;
+    position: absolute;
+    top: -28px;
+    left: 30px;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px; }
+  .container .join-now:hover {
+    background: url("/app/assets/images/sprite.png") -111px -426px; }
+  .container .info {
+    color: #fff;
+    font-size: 1.11rem;
+    padding: 30px 0 0 0; }
+    .container .info ul {
+      margin: 0;
+      padding: 0;
+      width: 0 auto; }
+      .container .info ul li {
+        text-transform: uppercase;
+        list-style: none;
+        text-align: center; }
+        .container .info ul li p {
+          margin-bottom: 1px;
+          font-weight: bold; }
+  .container .cb-wrapper .channel-banner {
+    width: 236px;
+    height: 121px;
+    margin: 15px 0 15px 0;
+    cursor: pointer; }
+  .container .cb-wrapper .channel-banner-margin {
+    margin: 0 -7px 0 -7px; }
+  .container .cb-wrapper .download-poker {
+    background: url("/app/assets/images/sprite.png") -109px -56px; }
+  .container .cb-wrapper .download-poker:hover, .container .cb-wrapper .download-poker-active {
+    background: url("/app/assets/images/sprite.png") -109px -210px; }
+  .container .cb-wrapper .play-in-casino {
+    background: url("/app/assets/images/sprite.png") -353px -56px; }
+  .container .cb-wrapper .play-in-casino:hover, .container .cb-wrapper .play-in-casino-active {
+    background: url("/app/assets/images/sprite.png") -353px -210px; }
+  .container .cb-wrapper .bet-now {
+    background: url("/app/assets/images/sprite.png") -596px -56px; }
+  .container .cb-wrapper .bet-now:hover, .container .cb-wrapper .bet-now-active {
+    background: url("/app/assets/images/sprite.png") -596px -210px; }
+  .container .show-more {
+    background-color: #16191C;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    cursor: pointer; }
+    .container .show-more a {
+      text-decoration: none;
+      color: #ffffff; }
+      .container .show-more a p {
+        margin: 7px; }
+  .container .show-more-hide {
+    display: none;
+    background-color: #16191C;
+    color: #cccccc;
+    font-size: 1.1rem;
+    padding: 20px; }
+  .container .links {
+    padding-top: 10px;
+    margin: 0 -40px 0 0px; }
+    .container .links ul {
+      margin: 0;
+      padding: 0;
+      list-style: none; }
+      .container .links ul li {
+        font-size: 1rem;
+        line-height: 18px; }
+        .container .links ul li p {
+          margin: 0;
+          font-weight: bold; }
+        .container .links ul li a {
+          color: #636363;
+          text-decoration: none; }
+  .container .bottom-link-backg {
+    background-color: #1B2226;
+    position: relative;
+    top: 35px;
+    border: 1px solid #000000; }
+    .container .bottom-link-backg .bottom-link {
+      position: relative;
+      top: 5px; }
+    .container .bottom-link-backg .right {
+      float: right; }
+  .container .padding-0 {
+    padding: 0; }
+  @media only screen and (max-width: 56.5em) {
+    .container ul.top-tabs li {
+      display: none; }
+    .container .m-menu {
+      display: block !important; }
+    .container .info ul li {
+      text-align: left; } }
+  @media screen and (max-width: 50.063em) {
+    .container .join-now {
+      position: relative;
+      top: 10px;
+      left: 0; }
+    .container .top-link-border-top {
+      display: none; }
+    .container .right {
+      float: left !important; } }
+  @media screen and (max-width: 40.063em) {
+    .container .join-now {
+      position: relative;
+      top: 10px;
+      left: 0; }
+    .container .right {
+      float: left !important; }
+    .container .bottom-link-backg {
+      display: none; } }
+
+/*container end*/

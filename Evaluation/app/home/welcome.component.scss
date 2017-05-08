@@ -1,0 +1,286 @@
+﻿.container {
+    max-width: 760px;
+    background-color: #000;
+
+    .nav {
+        .m-menu {
+            display: none;
+            background-image: url('/app/assets/images/m-menu.png');
+            width: 44px;
+            height: 34px;
+            float: right;
+            top: 10px;
+            position: relative;
+        }
+
+
+        li {
+            a, a:hover {
+                padding: 0 0 10px 0;
+                background: none;
+
+                .tab-nav-img {
+                    width: 82px;
+                    height: 56px;
+                    margin-left: 1px;
+                    cursor: pointer;
+                }
+
+                .tab-poker {
+                    background: url('/app/assets/images/sprite.png') -117px 525px;
+                }
+
+                .tab-poker:hover {
+                    background: url('/app/assets/images/sprite.png') -117px -583px;
+                }
+
+                .tab-casino {
+                    background: url('/app/assets/images/sprite.png') -200px 525px;
+                }
+
+                .tab-casino:hover {
+                    background: url('/app/assets/images/sprite.png') -200px -583px;
+                }
+
+                .tab-sports {
+                    background: url('/app/assets/images/sprite.png') -283px 525px;
+                }
+
+                .tab-sports:hover {
+                    background: url('/app/assets/images/sprite.png') -283px -583px;
+                }
+
+                .tab-live {
+                    background: url('/app/assets/images/sprite.png') -367px 525px;
+                }
+
+                .tab-live:hover {
+                    background: url('/app/assets/images/sprite.png') -367px -583px;
+                }
+            }
+        }
+
+        .navbar-brand {
+            padding: 20px 20px 0 0;
+        }
+    }
+    /*Top links*/
+    .top-links {
+        color: #85A5B1;
+        font-size: 1.1rem;
+        margin: 0 -2px 0 5px;
+    }
+
+    .top-link-border-top {
+        border-top: 1px solid #283238;
+        height: 23px;
+    }
+
+    .toll-free {
+        color: #fff;
+    }
+    /*Join now*/
+    .join-now {
+        background: url('/app/assets/images/sprite.png') -111px -372px;
+        width: 181px;
+        height: 55px;
+        cursor: pointer;
+        border: 4px solid #000;
+        position: absolute;
+        top: -28px;
+        left: 30px;
+        -moz-border-radius: 8px;
+        -webkit-border-radius: 8px;
+        border-radius: 8px;
+    }
+
+    .join-now:hover {
+        background: url('/app/assets/images/sprite.png') -111px -426px;
+    }
+
+    .info {
+        color: #fff;
+        font-size: 1.11rem;
+        padding: 30px 0 0 0;
+
+        ul {
+            margin: 0;
+            padding: 0;
+            width: 0 auto;
+
+            li {
+                text-transform: uppercase;
+                list-style: none;
+                text-align: center;
+
+                p {
+                    margin-bottom: 1px;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+    /* Channel banner */
+    .cb-wrapper {
+        .channel-banner {
+            width: 236px;
+            height: 121px;
+            margin: 15px 0 15px 0;
+            cursor: pointer;
+        }
+
+        .channel-banner-margin {
+            margin: 0 -7px 0 -7px;
+        }
+
+        .download-poker {
+            background: url('/app/assets/images/sprite.png') -109px -56px;
+        }
+
+        .download-poker:hover, .download-poker-active {
+            background: url('/app/assets/images/sprite.png') -109px -210px;
+        }
+
+        .play-in-casino {
+            background: url('/app/assets/images/sprite.png') -353px -56px;
+        }
+
+        .play-in-casino:hover, .play-in-casino-active {
+            background: url('/app/assets/images/sprite.png') -353px -210px;
+        }
+
+        .bet-now {
+            background: url('/app/assets/images/sprite.png') -596px -56px;
+        }
+
+        .bet-now:hover, .bet-now-active {
+            background: url('/app/assets/images/sprite.png') -596px -210px;
+        }
+    }
+    /* show-more */
+    .show-more {
+        background-color: #16191C;
+        text-transform: uppercase;
+        font-size: 0.9rem;
+        cursor: pointer;
+
+        a {
+            text-decoration: none;
+            color: #ffffff;
+
+            p {
+                margin: 7px;
+            }
+        }
+    }
+
+    .show-more-hide {
+        display: none;
+        background-color: #16191C;
+        color: #cccccc;
+        font-size: 1.1rem;
+        padding: 20px;
+    }
+    /* links */
+    .links {
+        padding-top: 10px;
+        margin: 0 -40px 0 0px;
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+
+            li {
+                font-size: 1rem;
+                line-height: 18px;
+
+                p {
+                    margin: 0;
+                    font-weight: bold;
+                }
+
+                a {
+                    color: #636363;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    /* bottom links*/
+    .bottom-link-backg {
+        background-color: #1B2226;
+        position: relative;
+        top: 35px;
+        border: 1px solid #000000;
+
+        .bottom-link {
+            position: relative;
+            top: 5px;
+        }
+
+        .right {
+            float: right;
+        }
+    }
+
+    .padding-0 {
+        padding: 0;
+    }
+
+    @media only screen and (max-width: 56.500em) {
+        ul.top-tabs {
+            li {
+                display: none;
+            }
+        }
+
+        .m-menu {
+            display: block !important;
+        }
+
+        .info {
+            ul {
+                li {
+                    text-align: left;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width:50.063em) {
+        .join-now {
+            position: relative;
+            top: 10px;
+            left: 0;
+        }
+
+        .top-link-border-top {
+            display: none;
+        }
+
+        .right {
+            float: left !important;
+        }
+    }
+
+    @media screen and (max-width:40.063em) {
+        .join-now {
+            position: relative;
+            top: 10px;
+            left: 0;
+        }
+
+        .right {
+            float: left !important;
+        }
+        .bottom-link-backg{
+            display:none;
+        }
+    }
+}
+/*container end*/
+
+
+
+
